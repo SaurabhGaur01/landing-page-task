@@ -1,0 +1,142 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 50%;
+    margin:auto;
+    height: 100%;
+}
+
+h4{
+    font-weight: 400;
+    font-size: 14px;
+}
+  
+section.main{
+    background-image: url('./media/img_hero.jpg');
+    color:#fff;
+    height:65vh;
+    background-position: right;
+    background-size: cover;
+}
+
+section.main .main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+section.main .main-content h1{
+    margin:-50px 0 0;
+    color:#4F4D53;
+    font-size: 75px;
+    font-weight: 900;
+}
+
+section.about-us{
+    margin:0;
+    text-align: center;
+}
+
+section.about-us .about-us-team-members{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -100px;
+}
+
+section.about-us .about-us-team-members img{
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+}
+
+section.about-us .about-us-heading{
+    color:#E8BE02;
+    font-size: 64px;
+    font-weight: 900;
+}
+
+section.about-us .about-us-description{
+    color:#4F4D53;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+footer{
+    background-color:#4F4D53;
+    border-top: 12px solid #E8BE02;
+}
+
+footer .footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    color: #fff;
+}
+
+footer .footer-wrapper .footer-column h3{
+    color:#E8BE02;
+    font-weight: 900;
+    font-size:20px
+}
+
+footer .footer-wrapper .footer-column ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+footer .footer-wrapper .footer-column ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+footer .footer-wrapper .footer-column ul li h4{
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        max-width: 90%;
+    }
+
+    section.main .main-content{
+        align-items: flex-start;
+    }
+
+    section.main .main-content h1{
+        font-size: 60px;
+        margin-top:110px;
+    }
+
+    section.main .main-content h1{
+        font-size: 30px;
+    }
+
+    section.about-us .about-us-team-members{
+        margin-top: -50px;
+    }
+
+    section.about-us .about-us-team-members img{
+        height: 100px;
+        width: 100px;
+    }
+
+    section.about-us .about-us-heading{
+        font-size: 45px;
+    }
+
+    section.about-us .about-us-team-members-info .about-us-team-member img{
+        width:75px;
+        height:75px;
+    }
+     
+    .footer-wrapper {
+        flex-direction: column;
+    }
+}
